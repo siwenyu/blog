@@ -1,0 +1,29 @@
+---
+layout: default
+title: jekyll如何使用
+---
+<h2>{{ page.title }}</h2>
+<p>jekyll如何使用</p>
+<pre>
+ 进入目录编译：
+
+jekyll build --watch
+
+ 启动：
+
+jekyll serve --detach
+
+1. => 功能和`jekyll serve`命令相同，但是会脱离终端在后台运行。
+
+2. 如果你想关闭服务器，可以使用`kill -9 1234`命令，"1234" 是进程号（PID）。
+
+3. 如果你找不到进程号，那么就用`ps aux | grep jekyll`命令来查看，然后关闭服务器。[更多](http://unixhelp.ed.ac.uk/shell/jobz5.html).
+
+
+jekyll serve --watch
+
+
+1. => 和`jekyll serve`相同，但是会查看变更并且自动再生成。
+</pre>
+<a href="http://jekyll.com.cn/" target="_blank">官方文档</a>
+<p>{{ page.date | date_to_string }}</p>
